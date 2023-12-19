@@ -44,11 +44,13 @@ public class ValidacoesListaTests
         var numeroParaProcurar = 10;
 
         // Act
+        var resultado = _validacoes.ListaContemDeterminadoNumero(lista, numeroParaProcurar);
 
         // Assert
+        Assert.False(resultado);
     }
 
-    //TODO: Corrigir a anotação [Fact]
+    [Fact]
     public void DeveMultiplicarOsElementosDaListaPor2()
     {
         //TODO: Implementar método de teste
